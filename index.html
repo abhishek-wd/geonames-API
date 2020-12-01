@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+    <title>API Example | Geonames</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="libs/vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <table class="table table-bordered">
+            <caption>Sample API | AJAX/PHP/CURL/JSON</caption>
+            <thead>
+                <tr class="d-flex">
+                    <th scope="col" class="text-center col-3">API Name</th>
+                    <th scope="col" class="text-center col-7">API Description</th>
+                    <th scope="col" class="col-2"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="d-flex">
+                    <td class="col-3">1. weatherIcao </td>
+                    <td class="col-7">
+                        <p>Weather Station with most recent weather observation for Airports.</p>
+                        <hr />
+                        <div class="form-group">
+                            <select id="airportIcao" class="form-control">
+                                <option value="" selected disabled>Select an Airport</option>
+                                <option value="EGLL">Heathrow Airport (LHR)</option>
+                                <option value="EGKK">Gatwick Airport (LGW)</option>
+                                <option value="EGGW">Luton Airport (LTN)</option>
+                                <option value="EGSS">London Stansted Airport (STN)</option>
+                                <option value="EGLC">London City Airport (LCY)</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="text-center col-2">
+                        <button id="btnOne" class="btn btn-primary">Submit</button>
+                    </td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-3">2. Neighbours </td>
+                    <td class="col-7">
+                        <p>Returns all neighbours for a country or administrative division.</p>
+                        <hr />
+                        <select id="selCountry" class="form-control">
+                            <option value="" selected disabled>Select a Country</option>
+                            <option value="gb">United Kingdom</option>
+                            <option value="us">United States</option>
+                            <option value="in">India</option>
+                            <option value="de">Germany</option>
+                            <option value="fr">France</option>
+                            <option value="be">Belgium</option>
+                            <option value="it">Italy</option>
+                        </select>
+                    </td>
+                    <td class="text-center col-2"><button id="btnTwo" class="btn btn-primary">Submit</button></td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-3">3. wikipediaSearch </td>
+                    <td class="col-7">
+                        <p>Wikipedia Fulltext Search</p>
+                        <hr />
+                        <div class="form-row">
+                            <div class="col">
+                                <input id="searchTerm" type="text" class="form-control" placeholder="Search Keyword">
+                            </div>
+                            <div class="col">
+                                <select id="selLanguage" class="form-control">
+                                    <option value="" selected disabled>Language</option>
+                                    <option value="en">English</option>
+                                    <option value="fr">Francais</option>
+                                    <option value="de">Deutsche</option>
+                                </select>
+                            </div>
+                        </div> 
+                            
+                    </td>
+                    <td class="text-center col-2"><button id="btnThree" class="btn btn-primary">Submit</button></td>
+                </tr>
+                <tr class="d-flex">
+                    <td colspan="3" class="col-12">
+                        <div id="resultSection" class="container">
+                            <div class="row">
+                                <div id="lbl" class="col text-left text-primary">
+                                    Results Section:
+                                </div>
+                            </div>                       
+                            
+                            <div class="row">
+                                <div id="firstRow" class="col col-3 text-right text-info">
+                     
+                                </div>                                
+                                <div id="firstData" class="col text-left text-success">
+                     
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div id="secondRow" class="col col-3 text-right text-info">
+                     
+                                </div>                                
+                                <div id="secondData" class="col text-left text-success">
+                     
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div id="thirdRow" class="col col-3 text-right text-info">
+                     
+                                </div>                                
+                                <div id="thirdData" class="col text-left text-success">
+                     
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div id="forthRow" class="col col-3 text-right text-info">
+                     
+                                </div>                                
+                                <div id="forthData" class="col text-left text-success">
+                     
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div id="fifthRow" class="col col-3 text-right text-info">
+                     
+                                </div>                                
+                                <div id="fifthData" class="col text-left text-success">
+                     
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div id="sixthRow" class="col col-3 text-right text-info">
+                     
+                                </div>                                
+                                <div id="sixthData" class="col text-left text-success">
+                     
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script type="application/javascript" src="libs/vendors/jquery/jquery-2.2.3.min.js"></script>
+    <script type="application/javascript" src="libs/vendors/bootstrap/bootstrap.min.js"></script>
+	<script type="application/javascript" src="libs/js/script.js"></script>
+</body>
+</html>
